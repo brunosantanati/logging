@@ -1,0 +1,32 @@
+2024-06-18 15:08:28 INFO  Starting LoggingApplication using Java 21-ea with PID 353815 (/home/bruno/IdeaProjects/logging/log4j-example/target/classes started by bruno in /home/bruno/IdeaProjects/logging/log4j-example)
+2024-06-18 15:08:28 DEBUG Running with Spring Boot v3.2.6, Spring v6.1.8
+2024-06-18 15:08:28 INFO  No active profile set, falling back to 1 default profile: "default"
+2024-06-18 15:08:29 INFO  Started LoggingApplication in 2.018 seconds (process running for 3.181)
+2024-06-18 15:08:29 DEBUG Debug log message
+2024-06-18 15:08:29 INFO  Info log message
+2024-06-18 15:08:29 INFO  Info log message 2
+2024-06-18 15:08:29 ERROR Error log message
+2024-06-18 15:08:29 ERROR Application run failed
+java.lang.RuntimeException: Error trying to execute something
+	at me.brunosantana.logging.LoggingApplication.execute(LoggingApplication.java:28) ~[classes/:?]
+	at me.brunosantana.logging.LoggingApplication.run(LoggingApplication.java:24) ~[classes/:?]
+	at org.springframework.boot.SpringApplication.lambda$callRunner$5(SpringApplication.java:790) ~[spring-boot-3.2.6.jar:3.2.6]
+	at org.springframework.util.function.ThrowingConsumer$1.acceptWithException(ThrowingConsumer.java:83) ~[spring-core-6.1.8.jar:6.1.8]
+	at org.springframework.util.function.ThrowingConsumer.accept(ThrowingConsumer.java:60) ~[spring-core-6.1.8.jar:6.1.8]
+	at org.springframework.util.function.ThrowingConsumer$1.accept(ThrowingConsumer.java:88) ~[spring-core-6.1.8.jar:6.1.8]
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:798) ~[spring-boot-3.2.6.jar:3.2.6]
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:789) ~[spring-boot-3.2.6.jar:3.2.6]
+	at org.springframework.boot.SpringApplication.lambda$callRunners$3(SpringApplication.java:774) [spring-boot-3.2.6.jar:3.2.6]
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:184) ~[?:?]
+	at java.base/java.util.stream.SortedOps$SizedRefSortingSink.end(SortedOps.java:357) ~[?:?]
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:510) ~[?:?]
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499) ~[?:?]
+	at java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:151) ~[?:?]
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:174) ~[?:?]
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234) ~[?:?]
+	at java.base/java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:596) ~[?:?]
+	at org.springframework.boot.SpringApplication.callRunners(SpringApplication.java:774) [spring-boot-3.2.6.jar:3.2.6]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:342) [spring-boot-3.2.6.jar:3.2.6]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1363) [spring-boot-3.2.6.jar:3.2.6]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1352) [spring-boot-3.2.6.jar:3.2.6]
+	at me.brunosantana.logging.LoggingApplication.main(LoggingApplication.java:15) [classes/:?]
