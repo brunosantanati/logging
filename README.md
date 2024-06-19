@@ -5,6 +5,8 @@
 [Docker compose - elasticsearch-logstash-kibana](https://github.com/docker/awesome-compose/tree/master/elasticsearch-logstash-kibana)  
 [Microservices Logging | ELK Stack | Elastic Search | Logstash | Kibana | JavaTechie](https://www.youtube.com/watch?v=5s9pR9UUtAU) ([source code](https://github.com/Java-Techie-jt/elk-stack-logging-example)) 
 
+![ELK Stack](img/elk.png)  
+
 ## Compose sample application
 ### Elasticsearch, Logstash, and Kibana (ELK) in single-node
 
