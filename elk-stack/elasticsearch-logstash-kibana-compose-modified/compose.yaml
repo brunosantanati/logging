@@ -22,8 +22,8 @@ services:
       discovery.seed_hosts: logstash
       LS_JAVA_OPTS: "-Xms512m -Xmx512m"
     volumes:
-      - ./logstash/pipeline/logstash-nginx.config:/usr/share/logstash/pipeline/logstash-nginx.config
-      - ./logstash/nginx.log:/home/nginx.log
+      - ./logstash/pipeline/logstash.config:/usr/share/logstash/pipeline/logstash.config
+      - /home/bruno/data/logs/elk-stack.log:/home/elk-stack.log
     ports:
       - "5000:5000/tcp"
       - "5000:5000/udp"
@@ -33,7 +33,7 @@ services:
       - elasticsearch
     networks:
       - elastic
-    command: logstash -f /usr/share/logstash/pipeline/logstash-nginx.config
+    command: logstash -f /usr/share/logstash/pipeline/logstash.config
   kibana:
     image: kibana:7.16.1
     container_name: kib
